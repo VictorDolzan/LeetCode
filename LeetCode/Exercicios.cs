@@ -13,7 +13,7 @@ public class Exercicios
             int complement = target - nums[i];
             if (dictionary.ContainsKey(complement))
             {
-                var retorno = new int[] {dictionary[complement], i}; 
+                var retorno = new int[] {dictionary[complement], i};
                 return retorno;
             }
 
@@ -38,9 +38,10 @@ public class Exercicios
             {
                 soma += account;
             }
+
             somaTotal.Add(soma);
         }
-        
+
         //CÓDIGO 2 
         // for (int i = 0; i < accounts.Length; i++)
         // {
@@ -57,6 +58,74 @@ public class Exercicios
     }
 
     #endregion
+
+    #region 3º challenge Fizz Buzz
+
+    public IList<string> FizzBuzz(int n)
+    {
+        var list = new List<string>();
+
+        for (int cont = 1; cont <= n; cont++)
+        {
+            var divisibleByThree = cont % 3 == 0;
+            var divisibleByFive = cont % 5 == 0;
+
+            if (divisibleByThree && divisibleByFive)
+            {
+                list.Add("FizzBuzz");
+            }
+            else if (divisibleByThree)
+            {
+                list.Add("Fizz");
+            }
+            else if (divisibleByFive)
+            {
+                list.Add("Buzz");
+            }
+            else
+            {
+                list.Add(cont.ToString());
+            }
+        }
+
+        return list;
+    }
+
+    #endregion
     
-    
+    #region 4º Challenge Number of Steps to Reduce a Number to Zero
+
+    public int NumberOfSteps(int num)
+    {
+        var cont = 0;
+        for (int i = 0; num != 0; i++)
+        {
+            var result= num % 2 == 0;
+            if (result)
+            {
+                num /= 2;
+            }
+            else
+            {
+                num -= 1;
+            }
+            cont++;
+        }
+
+        // while (num > 0)
+        // {
+        //     if (num % 2 == 0)
+        //     {
+        //         num /= 2;
+        //     }
+        //     else
+        //     {
+        //         num--;
+        //     }
+        //     cont++;
+        // }
+        return cont;
+    }
+
+    #endregion
 }

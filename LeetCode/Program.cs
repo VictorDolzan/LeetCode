@@ -4,7 +4,7 @@ using LeetCode;
 
 var exercicios = new Exercicios();
 
-#region First Challenge Two Sum
+#region 1ºst Challenge Two Sum
 
 /*1º challenge
 var nums = new []{2,7,11,15};
@@ -20,14 +20,27 @@ exercicios.TwoSum(nums, target);*/
 
 #endregion
 
-#region Second Challenge Richest Customer Wealth
+#region 2ºnd Challenge Richest Customer Wealth
 
-int[][] accounts = new int[][]
-{
-    new[] {1, 5},
-    new[] {7, 3},
-    new[] {3, 5}
-};
+// int[][] accounts = new int[][]
+// {
+//     new[] {1, 5},
+//     new[] {7, 3},
+//     new[] {3, 5}
+// };
+//
+// exercicios.MaximumWealth(accounts);
 
-exercicios.MaximumWealth(accounts);
+#endregion
+
+#region 3º challenge Fizz Buzz
+
+// exercicios.FizzBuzz(3);
+
+#endregion
+
+#region 4º Challenge 1342. Number of Steps to Reduce a Number to Zero
+
+// exercicios.NumberOfSteps(14);
+
 #endregion
