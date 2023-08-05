@@ -2,7 +2,8 @@
 
 public class Exercicios
 {
-    //1ºSt challenge Two Sum
+    #region 1ºSt challenge Two Sum
+
     public int[] TwoSum(int[] nums, int target)
     {
         Dictionary<int, int> dictionary = new Dictionary<int, int>();
@@ -21,8 +22,11 @@ public class Exercicios
 
         return Array.Empty<int>();
     }
-    
-    //2º challenge Richest Customer Wealth
+
+    #endregion
+
+    #region 2º challenge Richest Customer Wealth
+
     public int MaximumWealth(int[][] accounts)
     {
         //CÓDIGO 1
@@ -36,19 +40,23 @@ public class Exercicios
             }
             somaTotal.Add(soma);
         }
+        
         //CÓDIGO 2 
-        for (int i = 0; i < accounts.Length; i++)
-        {
-            var objeto = accounts[i];
-            int soma = 0;
-            for (int j = 0; j < objeto.Length; j++)
-            {
-                soma += objeto[j];
-            }
-            somaTotal.Add(soma);
-        }
+        // for (int i = 0; i < accounts.Length; i++)
+        // {
+        //     var objeto = accounts[i];
+        //     int soma = 0;
+        //     for (int j = 0; j < objeto.Length; j++)
+        //     {
+        //         soma += objeto[j];
+        //     }
+        //     somaTotal.Add(soma);
+        // }
 
         return somaTotal.Max();
     }
+
+    #endregion
+    
     
 }
