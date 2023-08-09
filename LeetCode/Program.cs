@@ -44,3 +44,10 @@ exercicios.TwoSum(nums, target);*/
 // exercicios.NumberOfSteps(14);
 
 #endregion
+
+#region 5º Middle of the Linked List
+
+// var list = new Exercicios.ListNode();
+// Exercicios.MiddleNode(list);
+
+#endregion

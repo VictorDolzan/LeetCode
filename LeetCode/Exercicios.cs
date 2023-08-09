@@ -92,7 +92,7 @@ public class Exercicios
     }
 
     #endregion
-    
+
     #region 4º Challenge Number of Steps to Reduce a Number to Zero
 
     public int NumberOfSteps(int num)
@@ -100,7 +100,7 @@ public class Exercicios
         var cont = 0;
         for (int i = 0; num != 0; i++)
         {
-            var result= num % 2 == 0;
+            var result = num % 2 == 0;
             if (result)
             {
                 num /= 2;
@@ -109,6 +109,7 @@ public class Exercicios
             {
                 num -= 1;
             }
+
             cont++;
         }
 
@@ -125,6 +126,40 @@ public class Exercicios
         //     cont++;
         // }
         return cont;
+    }
+
+    #endregion
+
+    #region 5º Middle of the Linked List
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int val = 0, ListNode next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
+    public ListNode MiddleNode(ListNode head)
+    {
+        if (head is null) return null;
+
+        ListNode outPut = head;
+        ListNode fasterPtr = head.next;
+
+        while (fasterPtr is not null)
+        {
+            outPut = outPut.next;
+            fasterPtr = fasterPtr.next;
+            if(fasterPtr is not null)
+                fasterPtr = fasterPtr.next;
+        }
+
+        return outPut;
     }
 
     #endregion
