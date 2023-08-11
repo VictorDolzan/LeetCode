@@ -132,35 +132,35 @@ public class Exercicios
 
     #region 5º Middle of the Linked List
 
-    // public class ListNode
-    // {
-    //     public int val;
-    //     public ListNode next;
-    //
-    //     public ListNode(int val = 0, ListNode next = null)
-    //     {
-    //         this.val = val;
-    //         this.next = next;
-    //     }
-    // }
-    //
-    // public ListNode MiddleNode(ListNode head)
-    // {
-    //     if (head is null) return null;
-    //
-    //     ListNode outPut = head;
-    //     ListNode fasterPtr = head.next;
-    //
-    //     while (fasterPtr is not null)
-    //     {
-    //         outPut = outPut.next;
-    //         fasterPtr = fasterPtr.next;
-    //         if(fasterPtr is not null)
-    //             fasterPtr = fasterPtr.next;
-    //     }
-    //
-    //     return outPut;
-    // }
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+    
+        public ListNode(int val = 0, ListNode next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
+    
+    public ListNode MiddleNode(ListNode head)
+    {
+        if (head is null) return null;
+    
+        ListNode outPut = head;
+        ListNode fasterPtr = head.next;
+    
+        while (fasterPtr is not null)
+        {
+            outPut = outPut.next;
+            fasterPtr = fasterPtr.next;
+            if(fasterPtr is not null)
+                fasterPtr = fasterPtr.next;
+        }
+    
+        return outPut;
+    }
 
     #endregion
 

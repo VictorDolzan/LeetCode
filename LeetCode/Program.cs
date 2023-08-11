@@ -60,3 +60,9 @@ exercicios.FindMaxConsecutiveOnes(nums);
     
 
 #endregion
+
+#region 7º Find Numbers with Even Number of Digits
+
+
+
+#endregion
