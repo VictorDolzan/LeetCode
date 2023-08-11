@@ -51,3 +51,12 @@ exercicios.TwoSum(nums, target);*/
 // Exercicios.MiddleNode(list);
 
 #endregion
+
+#region 6º Max Consecutives Ones
+
+var nums = new[] {1,1,0,1,1,1};
+
+exercicios.FindMaxConsecutiveOnes(nums);
+    
+
+#endregion
