@@ -64,6 +64,14 @@ exercicios.FindMaxConsecutiveOnes(nums);
 
 var listaNums = new[] {12, 345, 2, 6, 7896};
 
-exercicios.FindNumbers(listaNums);
+// exercicios.FindNumbers(listaNums);
+
+#endregion
+
+#region 8º Squares of a Sorted Array
+
+var arrayNums = new[] {-4, -1, 0, 3, 10};
+
+exercicios.SortedSquares(arrayNums);
 
 #endregion

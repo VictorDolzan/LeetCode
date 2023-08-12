@@ -136,29 +136,29 @@ public class Exercicios
     {
         public int val;
         public ListNode next;
-    
+
         public ListNode(int val = 0, ListNode next = null)
         {
             this.val = val;
             this.next = next;
         }
     }
-    
+
     public ListNode MiddleNode(ListNode head)
     {
         if (head is null) return null;
-    
+
         ListNode outPut = head;
         ListNode fasterPtr = head.next;
-    
+
         while (fasterPtr is not null)
         {
             outPut = outPut.next;
             fasterPtr = fasterPtr.next;
-            if(fasterPtr is not null)
+            if (fasterPtr is not null)
                 fasterPtr = fasterPtr.next;
         }
-    
+
         return outPut;
     }
 
@@ -182,24 +182,32 @@ public class Exercicios
                 maxLentgh.Add(maxNumber);
                 maxNumber = 0;
             }
-            
+
             if (i == nums.Length - 1)
             {
                 maxLentgh.Add(maxNumber);
             }
-            
         }
 
         return maxLentgh.Max();
     }
 
     #endregion
-    
+
     #region 7º Find Numbers with Even Number of Digits
 
     public int FindNumbers(int[] nums)
     {
         return nums.Select(num => num.ToString().ToCharArray()).Count(numCharArray => numCharArray.Length % 2 == 0);
+    }
+
+    #endregion
+
+    #region 8º Squares of a Sorted Array
+
+    public int[] SortedSquares(int[] nums)
+    {
+        return nums.Select(num => num * num).OrderBy(num => num).ToArray();
     }
 
     #endregion
