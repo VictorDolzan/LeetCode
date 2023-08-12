@@ -54,15 +54,16 @@ exercicios.TwoSum(nums, target);*/
 
 #region 6º Max Consecutives Ones
 
-var nums = new[] {1,1,0,1,1,1};
+var nums = new[] {1, 1, 0, 1, 1, 1};
 
 exercicios.FindMaxConsecutiveOnes(nums);
-    
 
 #endregion
 
 #region 7º Find Numbers with Even Number of Digits
 
+var listaNums = new[] {12, 345, 2, 6, 7896};
 
+exercicios.FindNumbers(listaNums);
 
 #endregion
