@@ -72,6 +72,13 @@ var listaNums = new[] {12, 345, 2, 6, 7896};
 
 var arrayNums = new[] {-4, -1, 0, 3, 10};
 
-exercicios.SortedSquares(arrayNums);
+// exercicios.SortedSquares(arrayNums);
 
+#endregion
+
+#region 9º Duplicate Zeros
+
+var numArray = new[] {1, 0, 2, 3, 0, 4, 5, 0};
+
+exercicios.DuplicateZeros(numArray);
 #endregion

@@ -211,4 +211,28 @@ public class Exercicios
     }
 
     #endregion
+
+    #region 9º Duplicate Zeros
+
+    public void DuplicateZeros(int[] arr)
+    {
+        var listArray = new List<int>();
+        var doubleZero = new int[] {0, 0};
+
+        for (int i = 0; listArray.Count < arr.Length; i++)
+        {
+            if (arr[i] != 0)
+            {
+                listArray.Add(arr[i]);
+            }
+            else
+            {
+                listArray.AddRange(doubleZero);
+            }
+        }
+
+        arr = listArray.ToArray();
+    }
+
+    #endregion
 }
