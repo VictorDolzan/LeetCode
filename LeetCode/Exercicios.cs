@@ -231,7 +231,7 @@ public class Exercicios
             }
         }
 
-        arr = listArray.ToArray();
+        listArray.ToArray();
     }
 
     #endregion
