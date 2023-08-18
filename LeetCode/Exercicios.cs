@@ -235,4 +235,32 @@ public class Exercicios
     }
 
     #endregion
+
+    #region 10º Palindrome Number
+
+    public bool IsPalindrome(int x)
+    {
+        // var numString = x.ToString().ToCharArray();
+        //
+        // for (int i = 0; i < numString.Length - 1; i++)
+        // {
+        //     var elementoASerComparado = numString[i];
+        //     if (elementoASerComparado != numString[numString.Length - 1 - i])
+        //     {
+        //         return false;
+        //     }
+        // }
+        //
+        // return true;
+
+        string first = x.ToString();
+        char[] charArr = first.ToCharArray();
+        char[] reverseArr = first.ToCharArray();
+        
+        Array.Reverse(reverseArr);
+
+        return charArr.SequenceEqual(reverseArr);
+    }
+
+    #endregion
 }

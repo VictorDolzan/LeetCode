@@ -80,5 +80,11 @@ var arrayNums = new[] {-4, -1, 0, 3, 10};
 
 var numArray = new[] {1, 0, 2, 3, 0, 4, 5, 0};
 
-exercicios.DuplicateZeros(numArray);
+// exercicios.DuplicateZeros(numArray);
+#endregion
+
+#region 10º Palindrome Number
+
+var number = 121;
+exercicios.IsPalindrome(number);
 #endregion
