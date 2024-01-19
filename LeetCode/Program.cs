@@ -86,5 +86,14 @@ var numArray = new[] {1, 0, 2, 3, 0, 4, 5, 0};
 #region 10º Palindrome Number
 
 var number = 121;
-exercicios.IsPalindrome(number);
+// exercicios.IsPalindrome(number);
+#endregion
+
+#region 11º Merge Sorted Array
+
+var nums1 = new [] {1, 2, 3, 0, 0, 0};
+var m = 3;
+var nums2 = new [] { 2, 5, 6 };
+var n = 3;
+exercicios.Merge(nums1, m, nums2, n);
 #endregion
