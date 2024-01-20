@@ -103,9 +103,17 @@ var n = 3;
 
 #region 12º Remove elements
 
-var nums = new[] { 3, 2, 2, 3 };
-var val = 3;
+// var nums = new[] { 3, 2, 2, 3 };
+// var val = 3;
 
-exercicios.RemoveElement(nums, val);
+// exercicios.RemoveElement(nums, val);
+
+#endregion
+
+#region 13 Remove Duplicates from sorted array
+
+var nums = new[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+
+exercicios.RemoveDuplicates(nums);
 
 #endregion

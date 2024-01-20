@@ -293,4 +293,25 @@ public class Exercicios
     }
 
     #endregion
+    
+    #region 13 Remove Duplicates from sorted array
+
+    public int RemoveDuplicates(int[] nums)
+    {
+        // { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+
+        int result = 1;
+
+        foreach (var num in nums)
+        {
+            if (nums[result - 1] != num)
+            {
+                nums[result++] = num;
+            }
+        }
+
+        return result;
+    }
+    
+    #endregion
 }
