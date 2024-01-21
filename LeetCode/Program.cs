@@ -121,6 +121,13 @@ var n = 3;
 #region 14º Check If N and Its Double Exist
 
 // var arr = new[] { -2,0,10,-19,4,6,-8};
-var arr = new[] { 0, 0 };
-exercicios.CheckIfExists(arr);
+// var arr = new[] { 0, 0 };
+// exercicios.CheckIfExists(arr);
+#endregion
+
+#region 15º ValidMountainArray
+
+var arr = new[] { 0,3,2,1 };
+exercicios.ValidMountainArray(arr);
+
 #endregion
