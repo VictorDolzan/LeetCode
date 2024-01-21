@@ -110,10 +110,17 @@ var n = 3;
 
 #endregion
 
-#region 13 Remove Duplicates from sorted array
+#region 13º Remove Duplicates from sorted array
+//
+// var nums = new[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+//
+// exercicios.RemoveDuplicates(nums);
 
-var nums = new[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+#endregion
 
-exercicios.RemoveDuplicates(nums);
+#region 14º Check If N and Its Double Exist
 
+// var arr = new[] { -2,0,10,-19,4,6,-8};
+var arr = new[] { 0, 0 };
+exercicios.CheckIfExists(arr);
 #endregion

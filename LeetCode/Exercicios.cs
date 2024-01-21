@@ -294,7 +294,7 @@ public class Exercicios
 
     #endregion
     
-    #region 13 Remove Duplicates from sorted array
+    #region 13º Remove Duplicates from sorted array
 
     public int RemoveDuplicates(int[] nums)
     {
@@ -313,5 +313,56 @@ public class Exercicios
         return result;
     }
     
+    #endregion
+    
+    #region 14º Check If N and Its Double Exist
+
+    public bool CheckIfExists(int[] arr)
+    {
+        // if (arr.Length != 0)
+        // {
+        //     foreach (var item in arr)
+        //     {
+        //         if (arr.Contains(item * 2) && item != 0)
+        //         {
+        //             return true;
+        //         }
+        //     }
+        //     
+        //     
+        // }
+        var index = 0;
+        
+        if (arr.Length != 0)
+        {
+            foreach (var item in arr)
+            {
+                if (item != 0)
+                {
+                    var find = Array.Find(arr, i => i == item * 2);
+                    if (find != 0)
+                    {
+                        return true;
+                    }
+                }
+
+                if (item == 0)
+                {
+                    for (int cont = index + 1; cont < arr.Length; cont++)
+                    {
+                        if (arr[cont] == item)
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                index++;
+            }
+        
+        }
+        
+        return false;
+    }
     #endregion
 }
