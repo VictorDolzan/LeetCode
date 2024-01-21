@@ -111,6 +111,7 @@ var n = 3;
 #endregion
 
 #region 13º Remove Duplicates from sorted array
+
 //
 // var nums = new[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
 //
@@ -123,11 +124,19 @@ var n = 3;
 // var arr = new[] { -2,0,10,-19,4,6,-8};
 // var arr = new[] { 0, 0 };
 // exercicios.CheckIfExists(arr);
+
 #endregion
 
 #region 15º ValidMountainArray
 
-var arr = new[] { 0,3,2,1 };
-exercicios.ValidMountainArray(arr);
+// var arr = new[] { 0,3,2,1 };
+// exercicios.ValidMountainArray(arr);
+
+#endregion
+
+#region 16º Replace Elements with Greatest Element on Right Side
+
+var arr = new int[] { 17, 18, 5, 4, 6, 1 };
+exercicios.ReplaceElements(arr);
 
 #endregion
