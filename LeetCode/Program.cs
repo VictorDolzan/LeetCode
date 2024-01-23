@@ -136,7 +136,74 @@ var n = 3;
 
 #region 16º Replace Elements with Greatest Element on Right Side
 
-var arr = new int[] { 17, 18, 5, 4, 6, 1 };
-exercicios.ReplaceElements(arr);
+//
+// var arr = new int[] { 17, 18, 5, 4, 6, 1 };
+// exercicios.ReplaceElements(arr);
+
+#endregion
+
+#region Código BALTA.IO
+
+var address = new Address()
+{
+    Street = "Rua",
+    Number = "Number",
+    ZipCode = "123"
+};
+
+// try
+// {
+//     var email = new Email("Victorddf5@gmail.com");
+//     // var email2 = (Email)"Ola@gmail.com";
+//     var jsonDoEmail = email.ToJson();
+// }
+// catch (InvalidEmailException e)
+// {
+//     Console.WriteLine(e.Message);
+//     throw;
+// }
+
+public class Address
+{
+    public string Street { get; set; } = string.Empty;
+    public string Number { get; set; } = string.Empty;
+    public string ZipCode { get; set; } = string.Empty;
+
+    public override string ToString() => $"{Street}, {Number}{Environment.NewLine}CEP: {ZipCode}";
+}
+
+public class Email
+{
+    
+    public Email(string address)
+    {
+        if (string.IsNullOrEmpty(address)) throw new InvalidEmailException();
+        
+        Address = address.Trim().ToLower();
+    }
+    
+    public string Address { get; set; } = string.Empty;
+    public static implicit operator string(Email email) => email.Address;
+    public static explicit operator Email(string email) => new (email);
+    public override string ToString() => Address;
+}
+
+public class InvalidEmailException : Exception
+{
+    private const string DefaultErrorMessage = "Email inválido";
+
+    public InvalidEmailException(string message = DefaultErrorMessage) : base(message)
+    {
+        
+    }
+}
+
+public static class EmailExtension
+{
+    public static string ToJson(this Email email)
+    {
+        return email.ToString();
+    }
+}
 
 #endregion
